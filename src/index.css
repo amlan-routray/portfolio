@@ -1,0 +1,19 @@
+@import url("/src/about/style.css");
+@import url("/src/contact/style.css");
+@import url("/src/features/style.css");
+@import url("/src/skills/style.css");
+@import url("/src/navbar/style.css");
+@import url("/src/navbar/NavigationModal.css");
+
+:root {
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  background-color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,80 @@
+.features {
+  padding: 24px 16px;
+  @media only screen and (min-width: 992px) {
+    padding: 0px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    span {
+      display: block;
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+  }
+  > p {
+    font-size: 0.75rem;
+    @media only screen and (min-width: 992px) {
+      width: 720px;
+    }
+    align-self: center;
+  }
+  .carousel-container {
+    position: relative;
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+    .left-arrow {
+      border: none;
+      position: absolute;
+      padding: 12px;
+      font-size: large;
+      font-weight: 1000;
+      left: 32px;
+      bottom: 40%;
+      z-index: 3;
+      border-radius: 18px;
+      text-align: center;
+      color: #2c2c2c;
+      background-color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .right-arrow {
+      border: none;
+      position: absolute;
+      padding: 12px;
+      font-size: large;
+      font-weight: 1000;
+      right: 32px;
+      bottom: 40%;
+      z-index: 3;
+      cursor: pointer;
+      border-radius: 18px;
+      text-align: center;
+      color: #2c2c2c;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .carousel {
+    margin-top: 48px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    > img:first-child {
+      margin: 0 16px 0 120px;
+    }
+    img {
+      margin: 0 16px;
+      height: 320px;
+    }
+  }
+}
